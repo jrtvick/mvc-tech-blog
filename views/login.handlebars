@@ -1,0 +1,30 @@
+<h2>Login</h2>
+
+<form class="form login-form">
+  <div class="form-group">
+    <label for="username-login">Username:</label>
+    <input class="form-input" type="text" id="username-login" />
+  </div>
+  <div class="form-group">
+    <label for="password-login">Password:</label>
+    <input class="form-input" type="password" id="password-login" />
+  </div>
+  <div class="form-group">
+<button class="btn btn-primary" id="login-btn" type="submit">Log In<span class="material-symbols-outlined">
+login
+</span></button>
+<div class='buttons is-right'>
+      {{! If the user is new, this button redirects them to the signup page }}
+      
+      <button type='submit' class='button is-rounded is-dark'><a
+        href='/signup'
+        class='button is-rounded is-warning'
+        id='btnhover'
+        role='button'
+      >TAKE ME TO SIGN UP</a></button>
+    </div>
+</form>
+
+<script src="/js/login.js"></script>
+
+

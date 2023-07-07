@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(120, 124, 180);
+}
+
+li {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.nav-items {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.nav-items:hover {
+  text-decoration: none;
+  color: coral;
+  cursor: crosshair;
+}
+
+.btn:hover {
+    cursor: crosshair;
+}
+
+#login-btn {
+  background-color: rgb(0, 65, 87);
+  color: coral;
+}
+
+#create-btn {
+    background-color: rgb(0, 65, 87);
+    color: coral;
+  }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-text {
+  text-decoration: none;
+  color: white
+}
+
+#footer-text:hover {
+  text-decoration: none;
+  cursor: crosshair;
+  color: coral;
+}
+
+#footer-text:visited {
+  text-decoration: none;
+}

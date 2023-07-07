@@ -1,0 +1,26 @@
+<h1>{{post.title}}</h1>
+<h3>Posted by {{post.User.username}} on {{formatDate post.createdAt}}</h3>
+<p>{{post.body}}</p>
+{{#if (isOwnPost post.User.id user_id)}}
+  <button><a href="/dashboard/edit/{{post.id}}">Edit Post</a></button>
+{{/if}}
+{{#if post.Comments}}
+  {{#each post.Comments}}
+    {{body}}
+    <p>Posted by: {{User.username}} on {{formatDate createdAt}}</p>
+  {{/each}}
+{{/if}}
+{{#if logged_in}}
+  <p>Submit new comment below</p>
+  <form id="comment-form">
+    <input type="hidden" name="post-id" value="{{post.id}}" />
+    <label for="comment"></label>
+    <textarea name="comment"></textarea><br />
+
+    <button type="submit">submit</button>
+
+  </form>
+
+{{/if}}
+
+<script src="/js/post.js"></script>

@@ -1,0 +1,13 @@
+<h2>Edit a Post</h2>
+<form id="edit-post">
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title" value="{{post.title}}"/><br>
+  <label for="body">Body:</label><br>
+  <textarea type="text" id="body" name="body" cols="60" rows="5"
+  
+  >{{post.body}}</textarea><br>
+  <button type="submit" id="update-btn" data-id="{{id}}">Update</button>
+  <button type="button" id="delete-button">Delete</button>
+</form>
+
+<script src="/js/update.js"></script>

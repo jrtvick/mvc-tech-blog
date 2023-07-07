@@ -1,0 +1,15 @@
+{{#if logged_in}}
+  <a href="/dashboard/new">
+    <button class="btn btn-primary" id="create-btn">Create a New Post<span
+        class="material-symbols-outlined"
+      >edit</span></button></a>
+{{/if}}
+{{#each posts as |post|}}
+  <div class="align-center mb-5">
+
+    <h2><a href="/posts/{{id}}">{{title}}</a></h2>
+    <h3>Posted by {{User.username}}</h3>
+    <h3>{{formatDate createdAt}}</h3>
+
+  </div>
+{{/each}}
