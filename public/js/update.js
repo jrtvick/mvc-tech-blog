@@ -5,7 +5,7 @@ const updateButtonHandler = async (event) => {
     const postId = event.target.getAttribute("data-id");
     console.log(postId)
 
-    await fetch(`/api/post/${postId}`, {
+    await fetch(`/api/posts/${postId}`, {
         method: "PUT",
         body: JSON.stringify({title, body}),
         headers: { "Content-Type": "application/json" },

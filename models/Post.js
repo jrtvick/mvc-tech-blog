@@ -13,21 +13,10 @@ Post.init(
     body: {
       type: DataTypes.STRING,
       allowNull: false
-    }
-    // ,
-    // createdAt: {
-    //   type: DataTypes.DATE,
-    //   defaultValue: DataTypes.NOW,
-    //   allowNull: false
-    // }
+    },
     },
   {
-    sequelize,
-    // timestamps: false,
-    // freezeTableName: true,
-    // underscored: true,
-    // modelName: 'post'
-    
+    sequelize    
   }
 );
 

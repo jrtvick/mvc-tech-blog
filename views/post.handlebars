@@ -2,10 +2,11 @@
 <h3>Posted by {{post.User.username}} on {{formatDate post.createdAt}}</h3>
 <p>{{post.body}}</p>
 {{#if (isOwnPost post.User.id user_id)}}
-  <button><a href="/dashboard/edit/{{post.id}}">Edit Post</a></button>
+  <button><a href="/dashboard/edit/{{post.id}}">Edit Post</a></button> <br>
 {{/if}}
 {{#if post.Comments}}
-  {{#each post.Comments}}
+  {{#each post.Comments}} 
+    {{User.username}} <br>
     {{body}}
     <p>Posted by: {{User.username}} on {{formatDate createdAt}}</p>
   {{/each}}
